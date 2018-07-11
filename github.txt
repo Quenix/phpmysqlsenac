@@ -1,0 +1,5 @@
+PULL -> Download/receber o código
+
+COMMIT -> Entregar o código no seu repositório local
+
+PUSH -> Enviar seu código para o repositório geral
