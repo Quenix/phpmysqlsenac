@@ -3,39 +3,42 @@
 		<meta charset="UTF-8">
 		<title>Divs!</title>
 		
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	</head>
 	
 	<body>
-		<div>
+		<div class="container">
 			<div>
 				<h1>Faça seu Login:</h1>
 			</div>
 			
-			<div>
-				<form>
+			<div >
+				<form class="form-group">
 				
 					<label class="login" id="labelEmail">Email: </label>
-					<input type="email">
+					<input class="form-control" type="email">
 					
 					<label class="login">Senha:</label>
-					<input type="password">
+					<input class="form-control" type="password">
+					
+					<button class="btn btn-dark" id="botaoFormulario"> Enviar </button>
 				
 				</form>
 			</div>
+			
+			<div>
+			<!-- 
+				_self abre na mesma pagina
+				_ blank abre em uma nova pagina 
+			-->
+				<a href="dashboard.html" target="_blank"> Clique Aqui </a>
+			</div>
+		
 		
 		</div>	
 		
-		<div>
-		<!-- 
-			_self abre na mesma pagina
-			_ blank abre em uma nova pagina 
-		-->
-			
-			<a href="dashboard.html" target="_blank"> Clique Aqui </a>
 		
-		
-		</div>
 	
 	</body>
 
