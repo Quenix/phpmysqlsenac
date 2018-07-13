@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<title>IF, ELSE</title>
+	</head>
+	
+	<body>
+	
+		<script>
+		/*
+			==      ->   IGUAL
+			>		->   MAIOR
+			<		->   MENOR
+			>=		->   MAIOR OU IGUAL
+			<=		->   MENOR OU IGUAL
+			!=		->   DIFERENTE		
+
+
+			OPERADORES LÓGICOS
+			&&   =   e
+			||	 =   ou
+		*/
+			//EXERCÍCIO 1//
+			
+			console.log("EXERCÍCIO 1");
+			var idade = 51;
+			
+			if((idade >= 18) && (idade <= 50)){
+								
+				console.log('PODE ENTRAR!');
+				
+			
+			}else{
+			
+				console.log('NÃO PODE ENTRAR!');
+			
+			}			
+			
+			
+			//EXERCÍCIO 2//
+			console.log("EXERCÍCIO 2");
+			var preco = 10;
+			var corCamiseta = "vermelha";
+			var tamanhoCamiseta = "GG";
+			
+			if(corCamiseta == "preta"){
+			
+				preco = preco + 2;
+				
+			}
+			
+			if(tamanhoCamiseta == "GG" || tamanhoCamiseta == "G"){
+			
+				preco = preco + 5;
+			}
+			
+			
+			console.log(preco);
+			
+			
+			//EXERCÍCIO 3//
+			console.log("EXERCÍCIO 3");
+			
+			var pedido = "suco de laranja";
+				
+			switch(pedido){
+			
+				case "suco de laranja":
+					console.log("VOCÊ PEDIU UM SUCO DE LARANJA!");
+				break;
+				
+				case "suco de morango":
+					console.log("VEJO QUE QUER UM SUCO DE MORANGO!");
+				break;
+			
+				default:
+					console.log("Não entendi o seu pedido!");
+				break;
+			
+			}			
+			
+		
+		</script>
+	
+	</body>
+
+</html>
