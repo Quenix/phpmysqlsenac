@@ -16,6 +16,16 @@ Quando cria o nome da pasta no diretório é o endereço da pasta que vou utiliz
 localhost/login
 existe uma pasta login dentro do diretorio HTDOCS
 
+Workbench
+
+Data Grip
+https://www.jetbrains.com/datagrip/
+
+Netbeans IDE PHP
+Atom
+Sublime
+VSCode
+
 
 
 
@@ -26,3 +36,10 @@ https://www.apachefriends.org/pt_br/index.html
 https://www.hostinger.com.br/
 
 https://www.umbler.com/br
+
+https://www.php-fig.org/psr/psr-1/
+site para boas praticas de como escrever variaveis etc
+
+https://igorescobar.github.io/jQuery-Mask-Plugin/
+
+https://jqueryui.com/
