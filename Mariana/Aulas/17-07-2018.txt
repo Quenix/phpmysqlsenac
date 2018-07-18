@@ -1,0 +1,36 @@
+https://tools.pingdom.com/
+Testa o tempo de carregamento dos sites
+
+
+https://tinypng.com/
+Comprime a imagem e retorna ela menor para a renderização da página
+
+https://www.get-metadata.com/
+Pega o metadata do arquivo para maiores informaçoes de tamanho e formato
+
+https://ckeditor.com/
+Editor de Texto em JQuery
+
+CRUD
+
+SELECT - CONSULTAS
+INSERT - INSERIR
+UPDATE - ATUALIZAR DADOS
+DELETE - REMOVER DADOS
+
+
+Sakila
+Modelo de Banco de dados para teste
+
+
+https://www.devmedia.com.br/sql-join-entenda-como-funciona-o-retorno-dos-dados/31006
+
+
+Curiosidade:
+https://modeanalytics.com/
+
+
+http://www.miraclesalad.com/webtools/md5.php
+usado para criptografar a senha
+
+CURRENT_TIMESTAMP 
