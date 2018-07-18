@@ -4,7 +4,7 @@
 	include("header.php");
 ?>
 	
-	<form>
+	<form method="POST" action="gravaUsuario.php">
 		<label>Nome:</label>
 		<input type="text" name="nome">
 
