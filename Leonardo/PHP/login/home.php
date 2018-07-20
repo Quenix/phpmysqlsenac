@@ -1,24 +1,21 @@
-<?php 
-
-	$email = $_POST['email'];
-	$senha = $_POST['senha'];
+<?php
+	session_start();
+	$nome = $_SESSION['nome'];	
 	
-	echo $email;
-	echo $senha;
-	
+	include('header.php');
+		
 ?>
 
-<html>
+	<h1>Bem vindo, <?= $nome ?> </h1>
+	<form method="POST" action="logout.php">
+		<button type="submit" class="btn btn-danger">
+		<i class="fas fa-sign-out-alt"></i>
+		Logout
+		</button>
+	</form>
 
-	<head>
-		<title>Home</title>
-	</head>
+<?php
 	
-	<body>
-		
-		<h1>Você foi logado!</h1>
-		<a href="index.php">Logout</a>
 	
-	</body>
-
-</html>
+	include('footer.php');
+?>

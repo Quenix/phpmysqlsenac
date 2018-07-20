@@ -22,7 +22,11 @@
 	$dados = mysqli_fetch_assoc($retorno);
 	
 	if($dados != null){
-		die('Você está logado!');
+		//Aqui vai gravar a SESSION e direcionar para a home
+		session_start();
+		$_SESSION['nome'] = $dados['nome'];
+		header("Location: home.php");
+		
 	}else{
 		header("Location: index.php?login=0");
 		exit();
