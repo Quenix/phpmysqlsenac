@@ -1,24 +1,18 @@
 <?php
-	// utilizado no metodo POST
-	$email = $_POST['emailUsuario'];
-	$senha = $_POST['senhaUsuario'];
-	
-	
-	//utilizado o metodo GET
-	//$email = $_GET['emailUsuario'];
-	//$senha = $_GET['senhaUsuario'];
-	
-	echo $email;
-	echo $senha;
-?>
+	// include, inclui no sistema, as vezes acontece de incluir mais de uma vezes
+	// include_once, inclui somente uma vez. Faz uma verificação
+	session_start();
+	$nome = $_SESSION['nome'];	
+	include('header.php');
+?>	
 
-<html>
-	<head>
-		<title> Home </title>
-	</head>
+	<h1> Bem vindo(a),<?= $nome ?> </h1>;
+	<form method="POST" action="logout.php">
+		<button type="submit" class="btn btn-danger">
+		<i class="fas fa-sign-out-alt"></i>Logout</button>
+	</form>
 	
-	<body>
-		<h1> Você foi logado! </h1>
-		<a href="index.php"> Logout </a>
-	<body>
-<html>
+	
+<?php	
+	include('footer.php')
+?>
