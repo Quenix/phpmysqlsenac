@@ -52,11 +52,33 @@
 	$conexao = @mysqli_connect('localhost', 'root', '', 'sistema_loja') or die('Problemas na conexão com o banco');
 	$query = "SELECT * FROM usuario WHERE email='$email' AND senha='$senha'";
 	$retorno = mysqli_query($conexao, $query) or die ('Não foi possivel retornar a consulta');
-	//$dados = mysqli_fetch_assoc($retorno);
-	$dados = mysqli_fetch_array($retorno);
+	$dados = mysqli_fetch_assoc($retorno);
+	
+	///$array = [];
+	//while($dados = mysqli_fetch_assoc($retorno)){
+		
+		//array_push($array, $dados);
+		
+	//}
+	
+	//var_dump($array[0]['email']);
+	//die();
+	
+	$nomeUsuario = $dados['nome'];
+	
+	//DEBUG
+	//var_dump($nomeUsuario);
+	//print_r($nomeUsuario);
+	//die();
+	//
 	
 	if ($dados != null){
-		die('Você está logado');
+		// Aqui vai gravar a Session e direcionar para a Home;
+		session_start();
+		$_SESSION['nome'] = $nomeUsuario;
+		header("Location: home.php");
+		
+		//die('Você está logado');
 	}
 	else {
 		header("Location: index.php?login=0");

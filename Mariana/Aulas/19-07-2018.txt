@@ -1,0 +1,26 @@
+Cookie
+- É salvo do lado do cliente
+- Facil manipulação das informaçoes
+- Não é seguro pois o usuario pode editar e manipular algumas informações de validação
+
+Session
+- É validada do lado do Server
+- Usuario tem acesso mas não consegue manipular, somente o servidor manipular
+
+Facebook Pixel
+- Uma ferramenta de tracking para analise de propagandas, listagem de emails e etc
+
+Teste AB
+- Normalmente utilizado para comercio
+- São lançados dois sites e aquele que converter mais "compras" irá seguir a linha dos proprietarios
+
+DXC Technology
+
+font Awesome
+Icones de botoes
+
+SVG jquery effects
+
+https://www.w3schools.com/Jquery/jquery_get_started.asp
+
+
