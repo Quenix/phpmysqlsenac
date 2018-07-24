@@ -8,12 +8,13 @@
 		
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 		
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	
 	<body>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		
+		 <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<script src="js/script.js"></script>
 		
 		

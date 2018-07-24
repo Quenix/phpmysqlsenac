@@ -1,5 +1,15 @@
 $(document).ready(function(){
 	
-	alert('Vai fazer sumir o aviso em 2 segundos');
-	
+	sumirElemento($('.alert'));
+
 });
+
+function sumirElemento(elemento){
+	
+	setTimeout(function(){
+			
+		elemento.fadeOut('slow');
+		
+	}, 1000);
+	
+}

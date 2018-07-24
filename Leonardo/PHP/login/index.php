@@ -22,10 +22,10 @@
 		?>
 		<form method="POST" action="login.php">
 			<label>E-mail:</label>
-			<input type="text" name="email" required>
+			<input id="email" type="text" name="email" required>
 			
 			<label>Senha:</label>
-			<input type="password" name="senha" required>	
+			<input id="senha" type="password" name="senha" required>	
 
 			<button type="submit">Enviar</button>
 		</form>
@@ -33,5 +33,5 @@
 		<a href="cadastro.php">Faça seu cadastro</a>
 
 	<?php
-	include("header.php");
+	include("footer.php");
 	?>
