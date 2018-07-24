@@ -1,5 +1,5 @@
 <?php 
-	include ('header.php');
+	include_once ('header.php');
 	
 ?>
 	
@@ -10,7 +10,7 @@
 			 //switch ($_GET['login']){
 				//case 
 				 
-			echo '<div class="alert alert-danger" role="alert">
+			echo '<div class="alert alert-danger" id="idAlerta" role="alert">
 					Usuário ou senha Inválidos
 				  </div>';
 		 }
@@ -35,7 +35,7 @@
 						<div class="panel-title text-center">Faça seu Login</div>
 					</div>     
 
-					<div class="panel-body" >
+					<div class="panel-body">
 
 						<form name="form" id="form" class="form-horizontal" enctype="multipart/form-data" method="POST" action="login.php">
 						   
@@ -52,6 +52,7 @@
 							<div class="form-group">
 								<!-- Button -->
 								<div class="col-sm-12 controls">
+									<button type="submit" href="#" class="btn btn-primary pull-left"><i class="glyphicon glyphicon-user"></i> Cadastre-se</button>
 									<button type="submit" href="#" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-log-in"></i> Log in</button>                          
 								</div>
 							</div>
