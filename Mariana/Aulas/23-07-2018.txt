@@ -1,0 +1,16 @@
+Seletores:
+
+<div class="alert alert-danger" role="alert">
+Usuário ou senha inválidos!
+</div>
+
+. o ponto seleciona pela role
+# o # seleciona pelo id
+
+
+$('.alert')
+$('#alerta' )
+
+
+https://bootstrapformbuilder.com/
+
