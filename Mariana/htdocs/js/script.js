@@ -1,3 +1,14 @@
+			$(document).ready(function(){
+				sumirElemento('caixaLogin');	
+			});
+			
+			function sumirElemento(elemento){
+				setTimeout(function (){
+					elemento.fadeOut('slow');
+				}, 1000);
+				// é um delay declarado para sumir
+			}
+			
 			/**
 			 * Particleground
 			 *
@@ -63,6 +74,5 @@
 			});
 			
 			
-			$(document).ready(function(){
-				alert('Sumir');
-			});
+
+			
