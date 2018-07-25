@@ -7,6 +7,7 @@
 		$nome = $_SESSION['nome'];
 	}else{
 		header("Location: index.php?login=1");
+		exit();
 	}
 	
 	include_once('header.php');

@@ -1,13 +1,25 @@
 <?php
-
+	include_once("validaUsuario.php");
+	
 	$nome         = $_POST['nomeUsuario'];
 	$sobrenome    = $_POST['sobrenomeUsuario'];
 	$email        = $_POST['emailUsuario'];
 	$senha 		  = md5($_POST['senhaUsuario']);
 	$senhaConfirm = md5($_POST['senhaConfirmacao']);
 	
+	
 	if ($senha != $senhaConfirm ){
-		header ("Location: cadastraUsuario.php");
+		header ("Location: cadastraUsuario.php?cadastro=1");
+		exit();
+	}
+	
+	if (!isset($nome) || !isset($sobrenome) || !isset($email) || !isset($senha)){ 	
+		header("Location: cadastraUsuario.php?cadastro=2");
+		exit();
+	}
+	
+	if (empty($nome) || empty($sobrenome) || empty($email) || empty($senha) ){
+		header("Location: cadastraUsuario.php?cadastro=3");
 		exit();
 	}
 	
