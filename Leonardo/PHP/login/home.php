@@ -24,6 +24,13 @@
 		</button>
 	</form>
 	
+	<form method="POST" action="listarUsuario.php">
+		<button type="submit" class="btn btn-success">
+		<i class="far fa-user"></i>
+		Listar usuário
+		</button>
+	</form>
+	
 	<form method="POST" action="logout.php">
 		<button type="submit" class="btn btn-danger">
 		<i class="fas fa-sign-out-alt"></i>

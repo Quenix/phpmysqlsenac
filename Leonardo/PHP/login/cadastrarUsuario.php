@@ -28,6 +28,27 @@
 	</div>
 		
 <?php
+	if(isset($_GET['retorno'])){
+			
+				switch($_GET['retorno']){
+					case 0:
+						echo '<div class="alert alert-danger" role="alert">
+							  Favor preencher todos os campos!
+						  </div>';
+						break;
+					case 1:
+						echo '<div class="alert alert-danger" role="alert">
+							  Senha divergente da confirmação!
+						  </div>';
+						break;
+					case 2:
+						echo '<div class="alert alert-success" role="alert">
+							  Cadastro efetuado com sucesso!
+						  </div>';
+						break;
+				}
+				
+			}
 	include_once("footer.php");
 ?>
 	
