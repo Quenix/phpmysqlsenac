@@ -2,8 +2,7 @@
 	// Diferença entre INCLUDE e REQUIRE
 	// https://goo.gl/L4GkhL
 	include_once("header.php");
-
-	
+ 
 ?>
 
 	<div class="cadastrarUsuario">
