@@ -1,12 +1,108 @@
 			$(document).ready(function(){
-				sumirElemento('caixaLogin');	
-			});
+				
+				sumirElemento($('.alert'));
+				
+				//toda vez que encontrar o componente delete fazendo um submit
+				//vai rodar uma funçao
+				$('.edit').on('click', function(e){
+					e.preventDefault(e);	
+
+					var id_usuario = $(this).find('input[name="id_usuario"]').val();
+					var nome       = $(this).find('input[name="nome"]').val();
+					var sobrenome  = $(this).find('input[name="sobrenome"]').val();
+
+					//console.log(id_usuario);
+
+					// joga todo o formulario em minify dentro de uma variavel e depois chama a variavel dentro do alerta
+					var corpo = '<div class="panel-body"><form action="dbEditarUsuario.php" method="POST" class="form">' + 
+									'<div class="form-group row"> ' + 
+										'<div class="input-group">' + 
+											'<div class="input-group-addon"> ' + 
+												'<i class="fa fa-user"></i>' + 
+											'</div>' + 
+											'<input id="nome" name="nome" value="' + nome + '" placeholder="Nome" type="text" class="form-control here" autofocus> ' + 
+										'</div>' + 
+									'</div>' + 
+									'<div class="form-group row"> ' + 
+										'<div class="input-group">' + 
+											'<div class="input-group-addon"> ' + 
+												'<i class="fa fa-user"></i>' + 
+											'</div>' + 
+											'<input id="sobrenome" name="sobrenome" value="' + sobrenome + '" placeholder="Sobrenome" type="text" class="form-control here">' +
+											'<input name="id_usuario" id="id_usuario" type="hidden" value="' + id_usuario + '">' + 
+									 	'</div>' + 
+									'</div>' + 
+								'</form></div>';
+
 			
+					$.confirm({
+						useBootstrap: false,
+						columnClass: 'col-md-4 col-md-offset-4',
+						title: 'Editar',
+						icon: 'fas fa-exclamation-triangle',
+						type: 'blue',
+						
+						content: corpo,
+						buttons: {
+							formSubmit: {
+								text: 'Atualizar',
+								btnClass: 'btn-blue',
+								action: function () {
+									var name = this.$content.find('#nome').val();
+									if(!name){
+										$.alert('Insira um nome válido');
+										return false;
+									}
+									this.$content.find('form').submit();
+								}
+								
+							},
+							Fechar: function () {
+								//close
+							},
+						},
+						
+					});
+				
+				});
+				
+				
+				$('.delete').on('click', function(e){
+					e.preventDefault(e);	
+					
+					var formulario = $(this);
+					
+					$.confirm({
+						icon: 'fas fa-exclamation-triangle',
+						title: 'Atenção',
+						content: 'Deseja realmente Excluir esse cliente?',
+						type: 'red',
+						typeAnimated: true,
+						buttons: {
+							tryAgain: {
+								text: 'Excluir',
+								btnClass: 'btn-red',
+								action: function(){
+									formulario.submit();
+								}
+							},
+							Fechar: function () {
+							}
+						}
+					});
+				
+				});
+
+			});
+
 			function sumirElemento(elemento){
-				setTimeout(function (){
+				
+				setTimeout(function(){
+						
 					elemento.fadeOut('slow');
+					
 				}, 1000);
-				// é um delay declarado para sumir
+				
 			}
 			
 			/**

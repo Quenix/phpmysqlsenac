@@ -26,7 +26,7 @@
 	$conexao = @mysqli_connect('localhost', 'root', '', 'sistema_loja') or die('Problemas na conexão com o banco');
 	$query   = "INSERT INTO usuario (email, senha, nome, sobrenome) VALUES ('$email', '$senha', '$nome', '$sobrenome')";
 	
-	mysqli_query($conexao, $query) or die ('Não foi possivel cadastrar o usuário');
+	mysqli_query($conexao, $query) or die ($conexao->error);
 	
 	header ("Location: cadastraUsuario.php?cadastro=0");
 	
