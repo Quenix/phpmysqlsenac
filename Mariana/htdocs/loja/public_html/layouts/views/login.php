@@ -1,3 +1,17 @@
+
+
+<div class="content">
+		 
+		 <?php
+		 if (isset ($_GET['login'])){
+				 
+			echo '<div class="alert alert-danger" id="idAlerta" role="alert">
+					Usuário ou senha Inválidos!
+				  </div>';
+		 }
+		 ?>
+</div>
+
 <div class="container">    
 				
 			<div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3"> 
@@ -19,7 +33,7 @@
 
 					<div class="panel-body">
 
-						<form name="form" id="form" class="form-horizontal" enctype="multipart/form-data" method="POST" action="login.php">
+						<form name="form" id="form" class="form-horizontal" enctype="multipart/form-data" method="POST" action="public_html/layouts/views/home.php">
 						   
 							<div class="input-group">
 								<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -46,6 +60,3 @@
 			</div>
 		</div>
 
-        <?php
-            include_once('svgIndex.php');
-        ?>

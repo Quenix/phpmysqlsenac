@@ -7,6 +7,8 @@
 
         <?php 
             include_once('css/import.php');  
+            include_once('js/import.php'); 
+            
         ?>
 
 
