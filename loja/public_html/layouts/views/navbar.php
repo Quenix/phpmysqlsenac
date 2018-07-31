@@ -31,12 +31,12 @@
                     <?=$_SESSION['nome'];?>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
+                   <!-- <a class="dropdown-item" href="#">Act</a>
                     <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-divider"></div>-->
                     <form action="?page=logout&token=<?=md5(session_id());?>" method="POST" class="dropdown-item">
                         <button type="submit"  class="btn btn-light btn-sm">
-                            <i class="fas fa-sign-out-alt"></i>Something else here
+                            <i class="fas fa-sign-out-alt"></i>Sair!
                         </button>
                     </form>
                 </div>
