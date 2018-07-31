@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 	// Diferença entre INCLUDE e REQUIRE
 	// https://goo.gl/L4GkhL
 	include("header.php");
@@ -11,6 +11,8 @@
 		<label>Sobrenome:</label>
 		<input type="text" name="sobrenome">
 		
+		<label>Data de Nascimento</label>
+		<input type="date" name="dt_nascimento" min="2017-09-04">
 		
 		<label>Email: </label>
 		<input type="email" name="email">
@@ -28,6 +30,4 @@
 <?php
 	require("footer.php");
 ?>
-	
-	
 	
