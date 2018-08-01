@@ -6,7 +6,11 @@
 
 ?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<<<<<<< HEAD
         <a class="navbar-brand" href="#">Navbar</a>
+=======
+        <img id="logo" src="<?= baseUrlPublic('resources/logo.png') ?>" href=""></img>   
+>>>>>>> master
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,7 +25,11 @@
                 </li>
 
                 <li class="nav-item <?php if($active == 'usuarios')echo 'active'; ?>">
+<<<<<<< HEAD
                     <a class="nav-link disabled" href="?page=usuarios">Usuários</a>
+=======
+                    <a class="nav-link" href="?page=usuarios">Usuários</a>
+>>>>>>> master
                 </li>
             </ul>
             <div class="nav-item dropdown">
@@ -31,12 +39,21 @@
                     <?=$_SESSION['nome'];?>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<<<<<<< HEAD
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
                     <div class="dropdown-divider"></div>
                     <form action="?page=logout&token=<?=md5(session_id());?>" method="POST" class="dropdown-item">
                         <button type="submit"  class="btn btn-light btn-sm">
                             <i class="fas fa-sign-out-alt"></i>Something else here
+=======
+                   <!-- <a class="dropdown-item" href="#">Act</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>-->
+                    <form action="?page=logout&token=<?=md5(session_id());?>" method="POST" class="dropdown-item">
+                        <button type="submit"  class="btn btn-light btn-sm">
+                            <i class="fas fa-sign-out-alt"></i>Sair!
+>>>>>>> master
                         </button>
                     </form>
                 </div>

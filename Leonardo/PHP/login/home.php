@@ -1,24 +1,49 @@
-<?php 
-
-	$email = $_POST['email'];
-	$senha = $_POST['senha'];
+<?php
+	session_start();
 	
-	echo $email;
-	echo $senha;
+	if(isset($_SESSION['nome'])){
+		
+		$nome = $_SESSION['nome'];	
+			
+	}else{
+		
+		header("Location: index.php?login=1");
+		
+	}
 	
+	include('header.php');
+	if(isset($_SESSION['nome'])){
+		$nome= $_SESSION['nome'];
+	}else{
+	header("location: index.php?login=1");}
+		
 ?>
 
-<html>
-
-	<head>
-		<title>Home</title>
-	</head>
+	<h1>Bem vindo, <?= $nome ?> </h1>
 	
-	<body>
-		
-		<h1>Você foi logado!</h1>
-		<a href="index.php">Logout</a>
+	<form method="POST" action="cadastrarUsuario.php">
+		<button type="submit" class="btn btn-primary">
+		<i class="far fa-user"></i>
+		Cadastrar usuário
+		</button>
+	</form>
 	
-	</body>
+	<form method="POST" action="listarUsuario.php">
+		<button type="submit" class="btn btn-success">
+		<i class="far fa-user"></i>
+		Listar usuário
+		</button>
+	</form>
+	
+	<form method="POST" action="logout.php">
+		<button type="submit" class="btn btn-danger">
+		<i class="fas fa-sign-out-alt"></i>
+		Logout
+		</button>
+	</form>
 
-</html>
+<?php
+	
+	
+	include('footer.php');
+?>
