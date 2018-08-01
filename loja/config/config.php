@@ -7,7 +7,7 @@
  
  $connect  = mysqli_connect($localhost, $username, $password, $db);
 
-define('BASEPATH', 'http://localhost/loja/public_html/');
+define('BASEPATH', 'http://localhost/loja/public_html/'); // variavel global
 define('APP_PATH', '../app/');
 
 function baseUrlPublic($url){

@@ -1,8 +1,9 @@
 <?php
 
+
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
-    include(appPath('usuario/efetuarLoginUsuario'));
+    include(appPath('usuario/efetuarLoginUsuario')); 
 
 }else{
 
@@ -16,9 +17,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 include('layouts/views/navbar.php');
 
-
 ?>
 
-
-
-<h1>Olá, <?=$_SESSION['email'];?></h1>
+<h1>Você esta logado <?=$_SESSION['nome'];?></h1>

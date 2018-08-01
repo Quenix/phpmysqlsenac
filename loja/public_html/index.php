@@ -2,7 +2,7 @@
 
 session_start();
 
-include_once('../config/config.php');
+include_once('../config/config.php');// conexao com o banco
 include_once('layouts/header.php');
 
 if(isset($_GET['page'])){
