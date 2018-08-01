@@ -1,12 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-$email = $_POST['email'];
-$senha = $_POST['senha'];
-
-$_SESSION['email'] = $email;
-$_SESSION['nome'] = 'Leonardo Vasques';
-=======
 $email_digitado = trim($_POST['email']);
 $senha_digitado = trim($_POST['senha']);
 $senha_dig_md5  = md5($senha_digitado);
@@ -40,7 +33,6 @@ if ($dados != null){
     exit();
 }
 
->>>>>>> master
 
 if(1!=1){
 

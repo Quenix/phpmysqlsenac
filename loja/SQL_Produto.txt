@@ -1,18 +1,10 @@
 CREATE TABLE `loja`.`produto` (
   `id_produto` INT NOT NULL AUTO_INCREMENT,
-<<<<<<< HEAD
   `nome_produto` VARCHAR(150) NOT NULL,
   `preco_produto` DECIMAL(10,2) NOT NULL,
   `peso_produto` DECIMAL(10,2) NOT NULL,
   `detalhes_produto` VARCHAR(2000) NOT NULL,
   `categoria` VARCHAR(150) NOT NULL,
   `foto_produto` VARCHAR(2000),
-=======
- `nome_produto` VARCHAR(150) NOT NULL,
-  `preco_produto` DECIMAL(10,2) NOT NULL,
-  `peso_produto` DECIMAL(10,2) NOT NULL,
-  `detalhes_produto` VARCHAR(2000) NOT NULL,
-  `categoria` VARCHAR(150) NOT NULL, `foto_produto` VARCHAR(2000),
->>>>>>> master
   PRIMARY KEY (`id_produto`),
   UNIQUE INDEX `id_produto_UNIQUE` (`id_produto` ASC));

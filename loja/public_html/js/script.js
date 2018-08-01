@@ -128,15 +128,9 @@ $(document).ready(function(){
             '<label>Peso:</label>' +
             '<input type="text" name="peso_produto" placeholder="Peso" class="name form-control" required />' +
             '<label>Descrição:</label>' +
-<<<<<<< HEAD
             '<textarea rows="10" maxlength="2000" name="detalhes_produto" placeholder="Descrição" class="name form-control" required />' +
             '<label>Categoria:</label>' +
             '<input type="text" name="categoria" placeholder="Categoria" class="name form-control" required />' +
-=======
-            '<input type="text" name="detalhes_produto" placeholder="Descrição" class="name form-control" required />' +
-            '<label>Categoria:</label>' +
-            '<input type="text" name="id_categoria" placeholder="Categoria" class="name form-control" required />' +
->>>>>>> master
             '<label for="upload"> Selecione uma imagem </label>' +
             '<input id="upload" name="foto_produto" type="file" accept="image/jpeg" class="btn-dark form-control"> ' +
             '</div>' +
@@ -164,19 +158,11 @@ $(document).ready(function(){
     });
 
 
-<<<<<<< HEAD
     $('.edit-produto').on('click', function(e){
         e.preventDefault();
 
         var id_produto       = $(this).find("input[name='id_produto']").val();
         var categoria        = $(this).find("input[name='categoria']").val();
-=======
-    $('.edit').on('click', function(e){
-        e.preventDefault();
-
-        var id_produto       = $(this).find("input[name='id_produto']").val();
-        var id_categoria     = $(this).find("input[name='id_categoria']").val();
->>>>>>> master
         var nome_produto     = $(this).find("input[name='nome_produto']").val();
         var preco_produto    = $(this).find("input[name='preco_produto']").val();
         var peso_produto     = $(this).find("input[name='peso_produto']").val();
@@ -185,10 +171,7 @@ $(document).ready(function(){
 
         $.confirm({
             title: 'Editar',
-<<<<<<< HEAD
             columnClass: 'col-md-6 col-md-offset-3',
-=======
->>>>>>> master
             content: '' +
             '<form action="?page=editarProduto" method="POST" class="formName" enctype="multipart/form-data">' +
             '<div class="form-group">' +
@@ -199,7 +182,6 @@ $(document).ready(function(){
             '<label>Peso:</label>' +
             '<input type="text" name="peso_produto" placeholder="Peso" class="name form-control" value="'+peso_produto+'" required />' +
             '<label>Descrição:</label>' +
-<<<<<<< HEAD
             '<textarea rows="10" maxlength="2000" name="detalhes_produto" placeholder="Descrição" class="name form-control" required>'+detalhes_produto+'</textarea>'+
             '<label>Categoria:</label>' +
             '<input type="text" name="categoria" placeholder="Categoria" class="name form-control" value="'+categoria+'" required />' +
@@ -207,14 +189,6 @@ $(document).ready(function(){
             '<input id="upload" name="foto_produto" type="file" accept="image/jpeg" class="btn-dark form-control" value="'+foto_produto+'"> ' +
             '<input type="hidden" name="id_produto" value="'+id_produto+'"/>' +
             '<img src ="'+foto_produto+'">' +
-=======
-            '<input type="text" name="detalhes_produto" placeholder="Descrição" class="name form-control" value="'+detalhes_produto+'" required />' +
-            '<label>Categoria:</label>' +
-            '<input type="text" name="id_categoria" placeholder="Categoria" class="name form-control" value="'+id_categoria+'" required />' +
-            '<label for="upload"> Selecione uma imagem </label>' +
-            '<input id="upload" name="foto_produto" type="file" accept="image/jpeg" class="btn-dark form-control" value="'+foto_produto+'"> ' +
-            '<input type="hidden" name="id_produto" value="'+id_produto+'"/>' +
->>>>>>> master
             '</div>' +
             '</form>',
             buttons: {
@@ -240,11 +214,7 @@ $(document).ready(function(){
 
     });
 
-<<<<<<< HEAD
     $('.delete-produto').on('click', function(e){
-=======
-    $('.delete').on('click', function(e){
->>>>>>> master
         e.preventDefault();
         var formulario = $(this);
         $.confirm({

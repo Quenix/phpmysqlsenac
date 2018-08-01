@@ -52,11 +52,7 @@ include(appPath('produto/listarProduto'));
                 <?php while($dados = mysqli_fetch_assoc($exec)): ?>
 
                     <tr>
-<<<<<<< HEAD
                         <th scope="row"><img src=" <?=$dados['foto_produto']?>" class="img-thumbnail" style="width:20%" ></img></th>
-=======
-                        <th scope="row">  <img src=" <?=$dados['foto_produto']?>" class="img-thumbnail" style="width:20%" ></img>		</th>
->>>>>>> master
                         <td>			   <?=$dados['id_produto']	  ?>    	</td>
                         <td>			   <?=$dados['nome_produto'] ?>		</td>
                         <td>			   <?=$dados['preco_produto']     ?>		</td>
@@ -64,24 +60,14 @@ include(appPath('produto/listarProduto'));
                         <td>			   <?=$dados['categoria']	  ?>    	</td>
                         <td>
 
-<<<<<<< HEAD
                             <form class="edit-produto" >
-=======
-                            <form class="edit" >
->>>>>>> master
                                 <input type="hidden" name="id_produto" value="<?=$dados['id_produto']?>">
                                 <input type="hidden" name="categoria" value="<?=$dados['categoria']?>">
                                 <input type="hidden" name="nome_produto" value="<?=$dados['nome_produto']?>">
                                 <input type="hidden" name="preco_produto" value="<?=$dados['preco_produto']?>">
                                 <input type="hidden" name="peso_produto" value="<?=$dados['peso_produto']?>">
-<<<<<<< HEAD
                                 <input type="hidden" name="detalhes_produto" value="<?=$dados['detalhes_produto']?>"> 
                                 <input type="hidden" name="foto_produto" value="<?=$dados['foto_produto']?>">
-=======
-                                <input type="hidden" name="detalhes_produto" value="<?=$dados['detalhes_produto']?>">
-                                <input type="hidden" name="foto_produto" value="<?=$dados['foto_produto']?>">
-                                
->>>>>>> master
                                 <button class="btn btn-primary">
                                     <i class="fas fa-pencil-alt"></i>
                                 </button>
@@ -89,11 +75,7 @@ include(appPath('produto/listarProduto'));
 
                         </td>
                         <td>
-<<<<<<< HEAD
                             <form class="delete-produto" method="POST" action="?page=removerProduto">
-=======
-                            <form class="delete" method="POST" action="?page=removerProduto">
->>>>>>> master
                                 <input type="hidden" name="id_produto" value="<?=$dados['id_produto']?>">
                                 <button class="btn btn-danger">
                                     <i class="far fa-trash-alt"></i>
