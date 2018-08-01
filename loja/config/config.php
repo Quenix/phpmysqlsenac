@@ -1,14 +1,24 @@
 <?php
 
+<<<<<<< HEAD
  //$localhost = 'localhost';
  $localhost = '10.51.47.69';
  $username  = 'root';
  $password  = 'root';
+=======
+ $localhost = 'localhost';
+ $username  = 'root';
+ $password  = '';
+>>>>>>> master
  $db 	    = 'loja';
  
  $connect  = mysqli_connect($localhost, $username, $password, $db);
 
+<<<<<<< HEAD
 define('BASEPATH', 'http://localhost/loja/public_html/');
+=======
+define('BASEPATH', 'http://localhost/loja/public_html/'); // variavel global
+>>>>>>> master
 define('APP_PATH', '../app/');
 
 function baseUrlPublic($url){
