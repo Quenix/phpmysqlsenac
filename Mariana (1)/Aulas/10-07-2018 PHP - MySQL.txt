@@ -1,0 +1,107 @@
+Sistema de Versionamento
+
+Github
+- Pesquisar sobre o Github
+- Perquisar sobre Versionamento
+- Criar uma conta no Github
+
+FrontEnd
+- Client Side
+- Se refere a tecnologia que vai rodar no cliente.
+- HTML
+- CSS
+- JavaScript
+- Sempre vai rodar diretamente na máquina do usuário.
+- BootStrap, ferramenta ajuda a montar "visuais bonitos". Também existe o Materialize.
+
+BackEnd
+- Server Side
+- Roda diretamente no Servidor
+- 
+
+FullStack
+- "Faz Tudo"
+- Realiza tanto tarefas BackEnd quando FrontEnd.
+
+Uglyfy: deixar tudo mais "feio". Comprime o codigo para otimizar a velocidade e tempo de carregamento. Todo codigo fica em uma unica linha.
+Beautify: otimiza o codigo json, html, etc.
+
+
+
+MVP (algo como produto minimo viavel) uma aplicação que funcione e tenha uma utilização.
+
+
+Sistema de Pedidos
+
+Cadastra Restaurantes, lanchonetes, etc
+
+Usuários podem visualizar os respectivos cardapios e solicita pratos ou lanches, etc
+
+
+
+Corpo HTML
+
+Head não leva nenhum tipo de conteudo, somente tags, metadados, informações para o navegador interpretar.
+todo resto deve ir para o Body	
+
+Tags Mais comuns
+
+h1
+h2
+h3
+h4
+h5
+
+são tags de titulo
+Sempre utilize a tag de acordo com o uso dela e não somente com o visual. quanto melhor estruturado, melhor o navegador interpreta a linguagem
+
+
+CTRL + U: Atalho para mostrar o código html de uma página
+CTRL + D: Clona a linha atual para baixo
+CTRL + SHIFT + SETA PARA CIMA: move a linha atual para a linha de cima
+CTRL + SHIFT + C (F12): abre o inspetor de pagina que vai inspecionar todos os elementos
+
+
+<meta charset="utf-8">
+É um metadado utilizado para padronizar as linguagens e não ter nenhum tipo de compilação "errada" e não interpretar caracteres especiais.
+
+Links:
+https://www.w3schools.com/tags/ref_byfunc.asp
+https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5/HTML5_element_list
+https://www.codigofonte.com.br/artigos/principais-tags-de-html
+https://www.devmedia.com.br/comandos-e-tags-html5/23618
+
+
+ATIVIDADE:
+
+- Criar limites e validações diretamente pelo HTML
+- Limitar Caracteres
+- Deixar obrigatório
+
+Atributos DIVS
+ID: é atribuido ao elemento, sempre que buscar por aquele nome, irá encontrar aquele elemento
+CLASS: É uma classe que herda os atributos basicos (padrão)
+
+
+		<style>
+		<!-- quando edita assim, ele pensa ser um elemento 
+			label{
+				color: red;
+			}
+		-->
+			
+		<!-- Quando edita com um ponto na frente, ele trata de acordo com a classe que informei na label -->
+			.login{
+				color: red;
+			}
+		
+		<!-- Quando edita com um hash na frente, ele trata de acordo com o id que informei na label -->
+			#labelEmail{
+				font-size: 55px;
+			}
+			
+				
+		</style>
+
+
+

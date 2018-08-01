@@ -1,0 +1,45 @@
+CTRL SHIFT F --- FIND IN PROJECT
+SHIFT SHIFT --- PROCURAR ARQUIVO
+
+CTRL G --- GO TO LINE
+CTRL / --- COMMENT SELECTION
+
+
+esquema de pastas
+
+public_html/
+	index.php
+	js/
+	css/
+	resources/img
+	resources/video
+	
+libraries/
+	stripe
+	tinify
+	pagseguro
+	paypal
+	
+controller
+	abstração logica em php
+
+model/
+	conexao com o banco de dados
+	
+config/
+
+
+configurar dominios personalizados
+
+C:\Windows\System32\drivers\etc\hosts 1- passo
+
+httpd-vhosts.conf
+
+conf/extra (diretorio)
+
+
+http://wrapbootstrap.com/preview/WB0573SK0
+
+http://jaybabani.com/complete-admin/v5.1/preview/fullmenu/index.html
+
+https://social.technet.microsoft.com/wiki/contents/articles/37157.asp-net-mvc-customizing-bootstrap-templates.aspx

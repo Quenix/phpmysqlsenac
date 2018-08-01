@@ -12,6 +12,10 @@
 	}
 	
 	include('header.php');
+	if(isset($_SESSION['nome'])){
+		$nome= $_SESSION['nome'];
+	}else{
+	header("location: index.php?login=1");}
 		
 ?>
 

@@ -1,0 +1,4 @@
+Browser Stack
+programa para testar como ficou o site em várias plataformas
+
+

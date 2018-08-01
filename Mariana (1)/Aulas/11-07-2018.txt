@@ -1,0 +1,40 @@
+Metodologias Ageis
+
+- Kanban (trello)
+
+
+Github
+-App
+Pode utilizar como aplicativo o GitHub/Git Kraken/ Etc
+
+-Repositorio
+Vamos utilizar como repositório
+
+Para subir no Github privado, é pago
+o Bit Bucket é livre
+
+Ferramentas PHP
+- PHP Storm (pago)
+- Atom
+
+Pull - Download/receber o codigo
+
+Commit -  Entregar o codigo no seu repositorio local
+
+Push - Enviar seu codigo para o repositorio Geral
+
+CTRL + F5 para limpar o cash caso as alterações nao funcionem.
+
+
+
+https://getbootstrap.com/docs/3.3/
+
+https://bootsnipp.com/tags/login
+
+https://jsfiddle.net/
+Cria um teste em produção
+
+https://getbootstrap.com/docs/4.0/components/navbar/
+
+https://getbootstrap.com/docs/3.3/css/#forms-controls-static
+

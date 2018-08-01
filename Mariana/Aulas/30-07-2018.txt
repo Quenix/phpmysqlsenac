@@ -1,0 +1,47 @@
+Loja - Painel
+- Cadastrar Users
+- Cadastrar Produtos
+
+Loja Site
+- Catalogo
+- Login/Cadastro
+- Carrinho/Compra
+
+Carrinho é adicionado em uma session como Array onde passa o id do produto e fica salvo diretamente na Session
+Normalmente a questão do estoque é validada somente na ultima etapa antes do botão comprar. 
+Onde voce retorna antes de efetuar o pagamento se existe ou não estoque do produto.
+
+Ferramentas para modelagem
+- StarUml
+
+Documento de Requisito
+- Definiçao dos escopos
+- O que o sistema deve fazer
+- O que o sistema não faz
+- O Ambiente em que o sistema irá rodar
+- Orçamentos/treinamentos/Prazos
+- Modelo de Entidade E Relacionamento
+
+- 40 horas - Layout
+- 80 horas - Back End
+- 30 horas - Teste
+- 15 horas - Documentação
+- 20 horas - Treinamento
+
+
+Modelo de Entidade e Relacionamento
+
+PJ - MEI
+Emitir Nota
+(Mensal/Entrega/Fechado)
+
+Após a implantação manter a recorrencia para:
+- Correções
+- Suporte
+- Treinamento
+- Alterações
+
+
+
+
+
