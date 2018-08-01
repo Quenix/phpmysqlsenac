@@ -1,10 +1,6 @@
 $(document).ready(function(){
 
-<<<<<<< HEAD
-
-=======
     // USUÁRIOS
->>>>>>> master
     $('#adicionar-usuario').on('click', function(e){
         e.preventDefault();
 
@@ -115,8 +111,6 @@ $(document).ready(function(){
 
     });
 
-<<<<<<< HEAD
-=======
 
     // PRODUTOS
     $('#adicionar-produto').on('click', function(e){
@@ -243,5 +237,4 @@ $(document).ready(function(){
 
     });
 
->>>>>>> master
 });

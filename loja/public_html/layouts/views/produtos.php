@@ -16,14 +16,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 include('layouts/views/navbar.php');
 
-<<<<<<< HEAD
-
-?>
-
-
-
-<h1>Listagem de Produtos:</h1>
-=======
 include(appPath('produto/listarProduto'));
 
 ?>
@@ -103,4 +95,3 @@ include(appPath('produto/listarProduto'));
     </div>
 
 </div>
->>>>>>> master

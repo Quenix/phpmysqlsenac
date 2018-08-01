@@ -2,11 +2,7 @@
 
 session_start();
 
-<<<<<<< HEAD
-include_once('../config/config.php');
-=======
 include_once('../config/config.php');// conexao com o banco
->>>>>>> master
 include_once('layouts/header.php');
 
 if(isset($_GET['page'])){
@@ -17,11 +13,7 @@ if(isset($_GET['page'])){
     }
 }else{
     if(isset($_SESSION['email'])){
-<<<<<<< HEAD
-        include_once('layouts/views/home.php'); 
-=======
         include_once('layouts/views/home.php');
->>>>>>> master
 
     }else{
 
