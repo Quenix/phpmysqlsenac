@@ -6,8 +6,7 @@
 
 ?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <img id="logo" src="<?= baseUrlPublic('resources/logo.png') ?>" href=""></img>
-        
+        <img id="logo" src="<?= baseUrlPublic('resources/logo.png') ?>" href=""></img>   
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,7 +21,7 @@
                 </li>
 
                 <li class="nav-item <?php if($active == 'usuarios')echo 'active'; ?>">
-                    <a class="nav-link disabled" href="?page=usuarios">Usuários</a>
+                    <a class="nav-link" href="?page=usuarios">Usuários</a>
                 </li>
             </ul>
             <div class="nav-item dropdown">
