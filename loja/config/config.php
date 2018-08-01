@@ -1,8 +1,9 @@
 <?php
 
- $localhost = 'localhost';
+ //$localhost = 'localhost';
+ $localhost = '10.51.47.69';
  $username  = 'root';
- $password  = '';
+ $password  = 'root';
  $db 	    = 'loja';
  
  $connect  = mysqli_connect($localhost, $username, $password, $db);

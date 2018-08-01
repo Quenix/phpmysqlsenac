@@ -1,4 +1,4 @@
-<?php
+<?php   
     if (isset($_GET['retorno'])){
         if ($_GET['retorno'] == "senhaincorreta"){
           echo "Dados inválido - 0";	
@@ -16,7 +16,7 @@
 
 <br/>
 
-<div class="container">
+<div class = "container">
     <div class="form">
         <form action="?page=home" method="POST">
             <div class="form-group">
