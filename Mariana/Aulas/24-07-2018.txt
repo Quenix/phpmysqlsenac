@@ -1,0 +1,43 @@
+Regras para inserção de imagem na web
+
+- Compressão
+- Alt
+- title
+- 
+
+Para background existe uma forma de usar jpeg progressivo, que carrega um esboço e depois vai renderizando melhor
+- Jpeg Progressivo (Progressive)
+
+Para compressão de png, pode quebrar a transparencia dependendo do tipo de compressão que utiliza
+
+tiny png para PNG
+e a compressao do proprio php para jpeg
+
+
+Analisar SQL Injection
+
+
+
+
+Drag and Drop
+http://www.authorcode.com/drag-and-drop-li-elements-into-textbox/
+
+http://localhost/login/dbCadastrarUsuario.php
+
+https://johnny.github.io/jquery-sortable/#
+
+https://jsfiddle.net/cpsw7e8a/
+
+https://www.jqueryscript.net/demo/jQuery-Drag-drop-Sorting-Plugin-For-Bootstrap-html5sortable/#
+
+https://www.jqueryscript.net/demo/Drag-Drop-Form-Builder-Bootstrap-jQuery/
+
+https://craftpip.github.io/jquery-confirm/
+
+https://formbuilder.online/
+
+https://jqueryhouse.com/jquery-drag-and-drop-plugins/
+
+http://bootstraptour.com/
+
+Ajax
