@@ -3,6 +3,7 @@ move_uploaded_file($_FILES["foto_produto"]["tmp_name"], "resources/img/" . $_FIL
 
 $foto_produto_dir =  baseUrlPublic("resources/img/") . $_FILES["foto_produto"]["name"];
 
+
 $query = "INSERT INTO produto(nome_produto, preco_produto, peso_produto, detalhes_produto, categoria, foto_produto) 
 values ('$nome_produto', '$preco_produto', '$peso_produto', '$detalhes_produto', '$categoria', '$foto_produto_dir')";
 
