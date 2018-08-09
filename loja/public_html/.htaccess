@@ -1,6 +1,0 @@
-
-<IfModule mod_rewrite.so>
-  RewriteEngine On
-
-  RewriteRule ^contato/?$ /index.php [NC,L]
-</IfModule>
